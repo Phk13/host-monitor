@@ -8,6 +8,8 @@ ICMP monitoring and notification tool (Gmail OAuth)
 ```
   -debug
         Debug logging
+  -help
+        Show help tooltips
   -i int
         Interval in seconds between each check (default 60)
   -ip value
