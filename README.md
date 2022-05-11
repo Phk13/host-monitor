@@ -20,6 +20,8 @@ ICMP monitoring and notification tool (Gmail OAuth)
         Timeout in milliseconds for ICMP (default 1000ms)
 ```
 
+# First steps
+
 ### Generate credentials for Google OAuth
 1. Access [Google API Console](https://console.developers.google.com/)
 2. Create a new project (or select an existing one)
@@ -38,6 +40,8 @@ When launching the tool for the first time, it will output a URL that will need 
 The URL redirects to Google Auth. After login into the corresponding account and authorizing the app, it will create a token.json and start the app.
 
 Afterwards, the token will be refreshed automatically.
+
+# Troubleshooting
 
 ### Token.json was removed or any other issues with token verification
 If the token is removed, the authorization process will not set up automatic token refresh. To enable it again, the authorization needs to be revoked.
