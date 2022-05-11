@@ -23,10 +23,10 @@ func (i *ipFlag) Set(value string) error {
 
 func main() {
 	var ipRangeCIDR ipFlag
-	flag.Var(&ipRangeCIDR, "ip", "IP range (CIDR or single IP) to monitor - e.g. 192.168.1.1 or 192.168.1.0/24")
+	flag.Var(&ipRangeCIDR, "ip", "IP range (CIDR or single IP) to monitor - e.g. 192.168.1.1 or 192.168.1.0/24 (can be repeated to specify multiple ip/ranges)")
 
 	interval := flag.Int("i", 60, "Time in seconds between each check")
-	timeout := flag.Int("t", 1000, "timeout in milliseconds between each check")
+	timeout := flag.Int("t", 1000, "timeout in milliseconds between for ICMP")
 	mailAddr := flag.String("mail", "", "Mail to notify")
 	debug := flag.Bool("debug", false, "Debug logging")
 	mailTest := flag.Bool("mailTest", false, "Do not send any mail, only try to connect and trigger notifications.")
