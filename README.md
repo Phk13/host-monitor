@@ -1,6 +1,9 @@
 # Host monitor
 ICMP monitoring and notification tool (Gmail OAuth)
 
+# Download
+[Download the latest version](https://github.com/Phk13/host-monitor/releases)
+
 
 # Usage
 ./host-monitor -ip ip/range -mail example@gmail.com [-i interval] [-t timeout] [-debug] [-mailTest]
